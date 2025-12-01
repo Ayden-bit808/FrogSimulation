@@ -28,6 +28,14 @@ public class FrogSimulation {
     }
 
     public double runSimulations(int num){
-        return 0;
+        int count = 0;
+        for (int i = 0; i < num; i++) {
+            if (simulate()){
+                count += 1;
+
+            }
+        }
+
+        return (double)count/num;
     }
 }
